@@ -1,0 +1,15 @@
+{
+    "builds": [
+        {
+            "src": "./api/server.ts",
+            "use": "@alpin/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/.*",
+            "dest": "/api/server.ts",
+            "methods": ["GET"]
+        }
+  ]
+}
